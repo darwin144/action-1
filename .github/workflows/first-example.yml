@@ -5,7 +5,11 @@ on: push
 jobs: 
     first-job:
         runs-on: ubuntu-latest
-        steps : 
+        steps :
+
+        - name: Checkoout Repo
+          uses: actions/checkout@v4 
+        
         - name: Welcome Message
           run: echo "My First Github Actions Job"
         
